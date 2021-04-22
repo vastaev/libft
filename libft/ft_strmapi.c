@@ -14,7 +14,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	step = 0;
 	while (s[step])
 	{
-		str[step] = f(step, s[step]); 
+		str[step] = f(step, s[step]);
 		step++;
 	}
 	str[step] = '\0';

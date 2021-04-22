@@ -5,7 +5,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	unsigned char	*dest;
 	unsigned char	*source;
-	size_t step;
+	size_t			step;
 
 	dest = (unsigned char *)dst;
 	source = (unsigned char *)src;

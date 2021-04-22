@@ -10,5 +10,5 @@ char	*ft_strdup(const char *s1)
 	if (scopy == NULL)
 		return (NULL);
 	ft_memcpy(scopy, s1, len + 1);
-	return(scopy);
+	return (scopy);
 }
