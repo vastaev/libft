@@ -22,18 +22,6 @@ static int	nlen(int n)
 	return (counter);
 }
 
-static char	*ifzero(void)
-{
-	char	*str;
-
-	str = malloc(2);
-	if (str == NULL)
-		return (NULL);
-	str[0] = '0';
-	str[1] = '\0';
-	return (str);
-}
-
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -47,7 +35,10 @@ char	*ft_itoa(int n)
 		return (NULL);
 	str[numlen--] = '\0';
 	if (nb == 0)
-		return (ifzero());
+	{
+		str[0] = '0';
+		return (str);
+	}
 	if (nb < 0)
 	{
 		str[0] = '-';
@@ -55,9 +46,8 @@ char	*ft_itoa(int n)
 	}
 	while (nb)
 	{
-		str[numlen] = (nb % 10) + 48;
+		str[numlen--] = (nb % 10) + 48;
 		nb = nb / 10;
-		numlen--;
 	}
 	return (str);
 }

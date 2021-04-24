@@ -6,7 +6,7 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/22 23:37:58 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/04/23 00:10:17 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/04/25 02:20:07 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		substr[0] = 0;
 		return (substr);
 	}
+	if (len > ft_strlen(s))
+		len = ft_strlen(s) - start;
 	substr = malloc(len + 1);
 	if (substr == NULL)
 		return (NULL);
