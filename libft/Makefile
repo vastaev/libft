@@ -6,7 +6,7 @@
 #    By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/21 12:30:03 by cjoanne           #+#    #+#              #
-#    Updated: 2021/04/22 21:59:10 by cjoanne          ###   ########.fr        #
+#    Updated: 2021/04/24 21:03:50 by cjoanne          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,15 +21,16 @@ SRCS =		ft_isdigit.c		ft_memccpy.c		ft_memcmp.c\
 			ft_putendl_fd.c		ft_isprint.c		ft_itoa.c\
 			ft_putnbr_fd.c		ft_strchr.c			ft_strdup.c\
 			ft_strlcat.c		ft_strlcpy.c		ft_strrchr.c\
-			ft_strnstr.c		ft_isascii.c\
-			$(SRCS_B)
+			ft_strnstr.c		ft_isascii.c		ft_strjoin.c\
+			ft_calloc.c			ft_substr.c			ft_strtrim.c\
+			ft_split.c
 
-SRCS_B =	ft_lstnew.c			ft_lstdelone.c
+SRCS_B =	ft_lstnew.c			ft_lstdelone.c		ft_lstadd_front.c\
+			ft_lstsize.c		ft_lstlast.c		ft_lstadd_back.c\
+			ft_lstclear.c		ft_lstmap.c			ft_lstiter.c
 
 OBJS = $(patsubst %.c,%.o,$(SRCS))
 OBJS_B = $(patsubst %.c,%.o,$(SRCS_B))
-
-D_FILES = $(patsubst %.c,%.d,$(SRCS))
 
 OPTFLAGS = -O2
 FLAGS = -Wall -Wextra -Werror 
@@ -40,15 +41,13 @@ $(NAME) : $(OBJS)
 	ar rcs $(NAME) $?
 
 %.o : %.c
-	gcc $(FLAGS) $(OPTFLAGS) -c $< -o $@ -MD
-
-include $(wildcard $(D_FILES))
+	gcc $(FLAGS) $(OPTFLAGS) -c $< -o $@
 
 bonus : 
 	make OBJS="$(OBJS_B)" all
 
 clean :
-	rm -f $(OBJS) $(D_FILES)
+	rm -f $(OBJS) $(OBJS_B)
 
 fclean : clean
 	rm -f $(NAME)
