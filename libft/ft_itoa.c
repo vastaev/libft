@@ -2,7 +2,7 @@
 //receive int, return string
 #include "libft.h"
 
-static int	nlen(int n)
+static int	nlen(long n)
 {
 	int		counter;
 
@@ -26,28 +26,25 @@ char	*ft_itoa(int n)
 {
 	char	*str;
 	int		numlen;
-	long	nb;
 
-	nb = n;
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	numlen = nlen(n);
-	str = (char *)malloc(numlen + 1);
+	str = (char *)malloc(sizeof(char) * numlen + 1);
 	if (str == NULL)
 		return (NULL);
 	str[numlen--] = '\0';
-	if (nb == 0)
-	{
-		str[0] = '0';
-		return (str);
-	}
-	if (nb < 0)
+	if (n < 0)
 	{
 		str[0] = '-';
-		nb = -nb;
+		n = -n;
 	}
-	while (nb)
+	while (n / 10)
 	{
-		str[numlen--] = (nb % 10) + 48;
-		nb = nb / 10;
+		str[numlen] = (n % 10) + 48;
+		n = n / 10;
+		numlen--;
 	}
+	str[numlen] = n + '0';
 	return (str);
 }

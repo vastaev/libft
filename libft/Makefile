@@ -6,7 +6,7 @@
 #    By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/21 12:30:03 by cjoanne           #+#    #+#              #
-#    Updated: 2021/04/24 21:03:50 by cjoanne          ###   ########.fr        #
+#    Updated: 2021/04/25 04:05:31 by cjoanne          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,6 @@ SRCS_B =	ft_lstnew.c			ft_lstdelone.c		ft_lstadd_front.c\
 OBJS = $(patsubst %.c,%.o,$(SRCS))
 OBJS_B = $(patsubst %.c,%.o,$(SRCS_B))
 
-OPTFLAGS = -O2
 FLAGS = -Wall -Wextra -Werror 
 
 all : $(NAME)
@@ -41,7 +40,7 @@ $(NAME) : $(OBJS)
 	ar rcs $(NAME) $?
 
 %.o : %.c
-	gcc $(FLAGS) $(OPTFLAGS) -c $< -o $@
+	gcc $(FLAGS) -c $< -o $@
 
 bonus : 
 	make OBJS="$(OBJS_B)" all
