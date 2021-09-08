@@ -6,7 +6,7 @@
 #    By: nephilister <nephilister@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/21 12:30:03 by cjoanne           #+#    #+#              #
-#    Updated: 2021/09/08 17:11:03 by nephilister      ###   ########.fr        #
+#    Updated: 2021/09/08 17:23:10 by nephilister      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ SRCS_LIST =	ft_isdigit.c\
 			ft_split.c\
 			ft_strcmp.c\
 			ft_isspace.c\
+			ft_isdigit.c\
 			ft_putstrnewline.c\
 			ft_split_len.c\
 			get_next_line.c\
