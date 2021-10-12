@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:23 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:39:24 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:07:13 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part2
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:38:07 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:38:08 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:06:20 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part1
 #include "libft.h"
 
 int	ft_isalnum(int c)

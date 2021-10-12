@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:27 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:39:28 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:07:16 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part1
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)

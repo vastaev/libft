@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:31 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:39:33 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:07:22 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part2 ?? str len
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

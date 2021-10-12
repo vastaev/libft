@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:03 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:39:04 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:06:51 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part2
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)

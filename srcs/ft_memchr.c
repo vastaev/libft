@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:38:49 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:38:50 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:06:34 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part1
 #include "libft.h"
 
 static int	ft_charcmp(unsigned char c1, unsigned char c2)

@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 01:11:08 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/31 01:11:09 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:07:37 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part1
 #include "libft.h"
 
 static int	ft_islower(int c)

@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:45 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:39:46 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:07:39 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part1
 #include "libft.h"
 
 static int	ft_isupper(int c)

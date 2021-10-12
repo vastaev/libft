@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:38:54 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:38:55 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:06:38 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part1 ??
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)

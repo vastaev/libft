@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:06 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:39:07 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:06:55 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part2
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

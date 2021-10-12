@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:37:53 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:37:54 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:05:55 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//part1
 #include "libft.h"
 
 long long	ft_atoi(const char *str)

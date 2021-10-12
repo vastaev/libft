@@ -6,11 +6,10 @@
 /*   By: cjoanne <cjoanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:39 by cjoanne           #+#    #+#             */
-/*   Updated: 2021/08/28 12:39:40 by cjoanne          ###   ########.fr       */
+/*   Updated: 2021/10/12 16:07:33 by cjoanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//p2
 #include "libft.h"
 
 static char	findinset(char c, char const *set)
